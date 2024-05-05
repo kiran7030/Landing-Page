@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajanan Medical Store</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color:lightblue;
+    }
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navigation {
+      background-color: #006400; /* Dark Green */
+      color: white;
+      text-align: right;
+      padding: 1rem;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      border-radius: 5px;
+    }
+    .navigation a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .navigation a:hover {
+      color: #00FF00; /* Light Green */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .featured-products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background-color: grey;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      filter: drop-shadow(2px 4px 6px black);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+      flex: 1 0 calc(25% - 2rem);
+      cursor: pointer;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-image {
+      max-width: 21rem;
+      height: 13rem;
+    }
+    .about-us {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background-color: #4CAF50;
+      color: white;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background-color: #333;
+      color: white;
+    }
+    .categories {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #FFD700; /* Gold */
+      color: #333;
+    }
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajanan Medical Store</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+    }
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navigation {
+      background-color: #006400; /* Dark Green */
+      color: white;
+      text-align: right;
+      padding: 1rem;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      border-radius: 5px;
+    }
+    .navigation a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .navigation a:hover {
+      color: #00FF00; /* Light Green */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .featured-products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background-color: grey;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 1rem;
+      filter: drop-shadow(2px 4px 6px black);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+      flex: 1 0 calc(25% - 2rem);
+      cursor: pointer;
+      
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-image {
+      max-width: 21rem;
+      height: 13rem;
+    }
+    .about-us {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background-color: #4CAF50;
+      color: white;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background-color: #333;
+      color: white;
+    }
+    .categories {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #FFD700; /* Gold */
+      color: #333;
+    }
+    .category-item {
+      display: inline-block;
+      margin: 0 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .category-item:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div style="display: flex;">
+      <img src="https://pbs.twimg.com/profile_images/1299443857411670016/o816UY7i_400x400.jpg" style="width: 6rem;height: 6rem; border-radius: 50%;" alt="error">
+      <h1 style="text-shadow: 4px 3px 2px red; font-size: 2.3rem;">Gajanan Medical Store</h1>
+    </div>
+    <div class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Featured Products</h2>
+    <div class="featured-products">
+      <div class="product-card">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Gajanan Medical Store</title>
+          <style>
+            body {
+              margin: 0;
+              padding: 0;
+              font-family: Arial, sans-serif;
+              background-color:lightblue;
+            }
+            .header {
+              background-color: #4CAF50;
+              color: white;
+              padding: 1rem;
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+            .navigation {
+              background-color: #006400; /* Dark Green */
+              color: white;
+              text-align: right;
+              padding: 1rem;
+              position: absolute;
+              top: 1rem;
+              right: 1rem;
+              border-radius: 5px;
+            }
+            .navigation a {
+              color: #FFFFFF;
+              text-decoration: none;
+              margin: 0 1rem;
+              font-weight: bold;
+              transition: color 0.3s;
+            }
+            .navigation a:hover {
+              color: #00FF00; /* Light Green */
+            }
+            .container {
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 2rem;
+            }
+            .featured-products {
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              margin-top: 2rem;
+            }
+            .product-card {
+              background-color: grey;
+              border: 1px solid #ddd;
+              border-radius: 10px;
+              padding: 2rem;
+              margin: 1rem;
+              filter: drop-shadow(2px 4px 6px black);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              text-align: center;
+              transition: transform 0.2s;
+              flex: 1 0 calc(25% - 2rem);
+              cursor: pointer;
+              
+            }
+            .product-card:hover {
+              transform: scale(1.05);
+            }
+            .product-image {
+              max-width: 21rem;
+              height: 13rem;
+            }
+            .about-us {
+              text-align: center;
+              margin-top: 3rem;
+              padding: 2rem 0;
+              background-color: #4CAF50;
+              color: white;
+            }
+            .contact {
+              text-align: center;
+              margin-top: 3rem;
+              padding: 2rem 0;
+              background-color: #333;
+              color: white;
+            }
+            .categories {
+              text-align: center;
+              padding: 2rem 0;
+              background-color: #FFD700; /* Gold */
+              color: #333;
+            }
+            .category-item {
+              display: inline-block;
+              margin: 0 1rem;
+              font-weight: bold;
+              color: #333;
+            }
+            .category-item:hover {
+              color: #000;
+            }
+            .contact{
+              display: inline;
+              flex-wrap: flex;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="header">
+            <div style="display: flex;">
+              <img src="https://pbs.twimg.com/profile_images/1299443857411670016/o816UY7i_400x400.jpg" style="width: 6rem;height: 6rem; border-radius: 50%;" alt="error">
+              <h1 style="text-shadow: 4px 3px 2px red; font-size: 2.3rem;">Gajanan Medical Store</h1>
+            </div>
+            <div class="navigation">
+              <a href="#">Home</a>
+              <a href="#">Products</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          <div class="container">
+            <h2>Featured Products</h2>
+            <div class="featured-products">
+              <div class="product-card">
+                <img class="product-image" src="https://th.bing.com/th/id/OIP.ABo-UwOphBvC9u2Xspm4iQHaHa?pid=ImgDet&rs=1" alt="Product 1">
+                <h3><b>DETTOL LIQUID</b></h3>
+                <p>Dettol Antiseptic Disinfectant Liquid is a multipurpose household cleaning essential that provides protection against germs and dirt on surfaces, cuts, wounds, etc. </p>
+              </div>
+              <div class="product-card">
+                <img class="product-image" src="https://cdn7.bigcommerce.com/s-c0v7r/images/stencil/1280x1280/products/493/1508/Orange_First_Aid_Box_1__35021.1443538228.jpg?c=2&imbypass=on" alt="Product 2">
+                <h3>FIRST AID KIT</h3>
+                <p>The first aid kit is a portable container of medicines, supplies, and information. It is kept for situations in which quick medical attention is needed for minor injuries.</p>
+              </div>
+              <div class="product-card">
+                <img class="product-image" src="https://images.freekaamaal.com/post_images/1601034141.jpg" alt="Product 3">
+                <h3>SAVLON ANTISEPTIC CREAM</h3>
+                <p>Savlon is a brand of antibacterial personal care products with the active ingredients of cetrimide and chlorhexidine gluconate. </p>
+              </div>
+            </div>
+        </div>
+        <div class="categories">
+          <h2>Product Categories</h2>
+          <div class="category-item">Medicines</div>
+          <div class="category-item">Personal Care</div>
+          <div class="category-item">Health Supplements</div>
+        </div>
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <h2 class="number">contact number</h2>
+          <h2 class="email">gajananmedi@gmail.com</h2>
+          <p>Get in touch with us for inquiries, orders, and more information.</p>
+        </div>
+      </body>
+      </html>
+        
+      
